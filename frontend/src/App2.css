@@ -1,0 +1,22 @@
+/* App2.css */
+.App2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .click-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+  

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Gradient background for entire page */
+body {
+  background: linear-gradient(0deg, #85b991, #ffffff); 
+}
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  /*background-image: url('/Users/reya/my-app/public/full_width.png'); /* Ensure correct image path */
+  background-repeat: no-repeat;
+  background-position: 1500px 100px;
+  background-size: 200px 75px;
+  padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  background-color: #041d0c;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; /* Set a fixed height to avoid confusion */
+}
+
+/* Adjust margin-top for header to ensure it's fully visible */
+header {
+  margin-top: 100px; /* Push content below the navbar */
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.navbar .brand {
+  font-size: 1.5em;
+  color: #ecf0f1;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px; /* Push content below the navbar */
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #31884e;
+  margin-bottom: 10px;
+}
+
+.snap-logo {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Form Enhancements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.zip-input, .location-filter {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #21a1f1;
+}
+
+/* Container for map and cards */
+.main-content {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.map-placeholder, #map {
+  width: 100%;
+  height: 400px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 500px; /* Adjust the height as per your requirement */
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.map-placeholder p {
+  color: #555;
+  font-size: 1.2em;
+}
+
+/* Card design */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
